@@ -1,7 +1,7 @@
 # wp-blog-theme
 Merhaba dostlar. Kendi blogum için kodladığım wordpress temamı çok fazla arkadaş istediği için sizlere ücretsiz paylaşmak istedim. Bu temayı kodlama amacım blog yazılarımı, yaptığım projeleri ve iletişim bilgilerimi paylaşmaktı. Kolay bir şekilde ufak düzenlemeler yaparak kendiniz için kullanabilirsiniz.
 
-###Özellikler:
+### Özellikler:
 ✅ Wordpress altyapısı üzerine kurulu
 ✅ Blog sayfası 
 ✅ Projelerim sayfası
@@ -9,7 +9,7 @@ Merhaba dostlar. Kendi blogum için kodladığım wordpress temamı çok fazla a
 ✅ İletişim sayfası
 ✅ Tatlı ve sade bir arayüz
 
-###Kurulum:
+### Kurulum:
 1-) GitHub bağlantısından dosyları indirin.
 2-) ZIP dosyasını açın. İçindeki klasörü /wp-content/themes/ içine atın.
 3-) Wordpress sitenize admin girişi yapın ve Görünüm > Temalar'dan temayı etkinleştirin.
