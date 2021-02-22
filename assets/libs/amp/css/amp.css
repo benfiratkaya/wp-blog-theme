@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+pre {
+  overflow-x: scroll;
+}
+
+.amp-wp-header .amp-wp-site-icon {
+  display: none;
+}
+
+.amp-wp-header .amp-wp-canonical-link {
+  right: 16px;
+}
