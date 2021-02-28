@@ -107,13 +107,6 @@
     wp_enqueue_script('fancybox.min.js', get_template_directory_uri().'/assets/libs/fancybox/js/fancybox.min.js', array(), '3.5.7', true);
     wp_enqueue_script('owl.carousel.min.js', get_template_directory_uri().'/assets/libs/owl.carousel/js/owl.carousel.min.js', array(), '2.3.4', true);
     wp_enqueue_script('main.min.js', get_template_directory_uri().'/assets/js/main.min.js', array(), '1.0', true);
-
-    if (!is_page('iletisim')) {
-      wp_dequeue_script('contact-form-7');
-      wp_dequeue_script('wpcf7-recaptcha');
-      wp_dequeue_script('google-recaptcha');
-      wp_dequeue_style('contact-form-7');
-    }
   }
   add_action('wp_enqueue_scripts', 'benfiratkaya_script_enqueue');
 
@@ -200,7 +193,28 @@
   }
   add_action('after_setup_theme', 'benfiratkaya_theme_setup');
 
+  /* RankMath Yorum Cevaplama Sorunu Çözümü */
   add_filter('rank_math/frontend/remove_reply_to_com', '__return_false');
+
+  /* Contact Form Recaptcha'yı diğer sayfalarda kaldırma */
+  function remove_cf7_from_pages() {
+  	global $post;
+  	if (!isset($post->post_content) || !has_shortcode($post->post_content, 'contact-form-7')) {
+      wp_dequeue_script('contact-form-7');
+  		wp_dequeue_script('wpcf7cf-scripts');
+  		wp_deregister_script('google-recaptcha');
+  		wp_dequeue_script('google-recaptcha');
+  	}
+  }
+  add_action('wp_footer', 'remove_cf7_from_pages', 1);
+
+  function remove_cf7con_from_pages() {
+  	global $post;
+  	if (!isset( $post->post_content) || !has_shortcode($post->post_content, 'contact-form-7')) {
+  		wp_dequeue_style('cf7cf-style');
+  	}
+  }
+  add_action('wp_head', 'remove_cf7con_from_pages', 1);
 
   require get_template_directory().'/classes/walkers/nav-menu.php';
   require get_template_directory().'/classes/walkers/comments.php';

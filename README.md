@@ -5,7 +5,7 @@ Merhaba dostlar. Kendi blogum için kodladığım wordpress temamı çok fazla a
 ### Özellikler:
 ✅ Wordpress altyapısı üzerine kurulu
 
-✅ Blog sayfası 
+✅ Blog sayfası
 
 ✅ Projelerim sayfası
 
@@ -23,8 +23,12 @@ Merhaba dostlar. Kendi blogum için kodladığım wordpress temamı çok fazla a
 
 3-) Wordpress sitenize admin girişi yapın ve Görünüm > Temalar'dan temayı etkinleştirin.
 
+### Google Analytics
 
-Sizler de bu projeyi destekleyebilirsiniz. Kendi blogum için kodlamıştım. Çok fazla arkadaş temayı sormuştu. Ben de en iyisi ücretsiz paylaşayım dedim. Umarım sizlere bir faydası olur. Herkese iyi forumlar 
+Google Analytics kodları temada mevcut. Eğer kendi Google Analytics sisteminize bağlamak istiyorsanız. "footer.php" dosyasının en altındaki Google Analytics ID'sini (UA- ile başlayan) değişmeniz yeterli.
+
+
+Sizler de bu projeyi destekleyebilirsiniz. Kendi blogum için kodlamıştım. Çok fazla arkadaş temayı sormuştu. Ben de en iyisi ücretsiz paylaşayım dedim. Umarım sizlere bir faydası olur.
 
 
 🌐 Temanın çalışır hali: https://www.benfiratkaya.com
